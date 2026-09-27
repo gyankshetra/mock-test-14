@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gyankshetra - BPSC TRE 4 Mock Test</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system}
+body{background:#eef2ee}.app{max-width:430px;margin:0 auto;min-height:100vh;background:#f8f9f8;position:relative;box-shadow:0 0 18px rgba(0,0,0,.12);overflow:hidden}
+.top{padding:14px 12px;display:flex;gap:14px;align-items:center;background:#f8f9f8;position:sticky;top:0;z-index:5}.top b{font-size:20px;color:#111}
+.card{margin:10px 14px;background:#fff;border:2.6px solid #1f7a3a;border-radius:18px;padding:22px 14px;text-align:center}
+.card h1{color:#0a3d1a;font-size:22px;font-weight:950}.bpsc{display:inline-block;background:#e6f6e9;border:1px solid #1f7a3a;padding:5px 14px;border-radius:20px;margin-top:8px;font-weight:900;color:#0f5d2f;font-size:12px}
+.boxes{display:flex;gap:9px;margin-top:18px}.bx{flex:1;background:#d9f0de;border:1.6px solid #1f7a3a;border-radius:12px;padding:11px 5px;text-align:center}.bx span{display:block;font-size:11px;font-weight:800;margin-top:5px;color:#0a3d1a;line-height:1.1}
+.instr{margin:14px;background:#fff;border-radius:16px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.instr h3{font-size:16px;display:flex;gap:8px}.instr li{margin-left:18px;font-size:13.5px;margin-top:10px;line-height:1.4}
+.btnG{width:calc(100% - 28px);max-width:402px;background:#16a34a;color:#fff;border:none;padding:17px;border-radius:14px;font-size:18px;font-weight:900;position:fixed;bottom:12px;left:50%;transform:translateX(-50%);z-index:6}
+/* PAGE 2 TEST */
+.greenHead{background:#16a34a;color:#fff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.menuBtn{background:#fff;border:none;border-radius:10px;padding:7px 12px;font-size:20px;font-weight:900;color:#0f5d2f}
+.testBar{background:#e8f5e0;margin:10px 12px;padding:10px 14px;border-radius:22px;display:flex;justify-content:space-between;font-size:12.5px;font-weight:800;color:#0f5d2f}
+.qArea{padding:12px 14px 90px 14px}.qTxt{font-size:15.5px;font-weight:700;line-height:1.4;margin-top:6px}
+.opt{border:1.7px solid #ddd;border-radius:12px;padding:13px 12px;margin:10px 0;background:#fff;font-size:14px;font-weight:600;cursor:pointer}
+.opt.sel{background:#0f5d2f;color:#fff;border-color:#0f5d2f}
+.btm{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;background:#fff;padding:10px;display:flex;gap:10px;border-top:1px solid #eee;z-index:6}
+.btm button{flex:1;padding:13px;border-radius:12px;font-weight:800;border:1.5px solid #aaa;background:#fff}.btm button.pr{background:#16a34a;color:#fff;border-color:#16a34a}
+#qPopup{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;z-index:99;justify-content:flex-end}
+.popBox{width:72%;max-width:310px;background:#fff;height:100%;padding:14px;overflow:auto}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:12px}
+.qn{height:42px;border-radius:8px;border:1.8px solid #ccc;display:flex;align-items:center;justify-content:center;font-weight:800;cursor:pointer}
+.qn.done{background:#0f5d2f;color:#fff;border-color:#0f5d2f}.qn.active{background:#dcfce7;border-color:#16a34a}
+.subPop{margin-top:18px;width:100%;background:#dc2626;color:#fff;border:none;padding:14px;border-radius:12px;font-weight:900}
+/* PAGE 3 RESULT */
+#page3{background:#0a2a12;min-height:100vh}
+.completed{margin:14px;background:linear-gradient(135deg,#0d6b28,#0a4d1e);border-radius:18px;padding:20px 16px;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.circle{width:92px;height:92px;border:3px solid #b7f0b7;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,.12)}
+.perfBox{margin:12px;background:#fff;border-radius:16px;padding:14px;border:1.5px solid #c5e8c5}
+.perfGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.pg{background:#f6fdf6;border:1px solid #d8f0d8;border-radius:12px;padding:10px;text-align:center}
+.pg b{font-size:18px;display:block;color:#0f5d2f}.pg span{font-size:10px;color:#555}
+.bar{margin-top:10px;background:#e5e7eb;border-radius:10px;height:10px;overflow:hidden}.barFill{height:100%;background:#16a34a;border-radius:10px}
+.analysisWrap{background:#f3f4f6;border-radius:22px 22px 0 0;margin-top:8px;min-height:40vh;padding:14px 10px 90px 10px}
+.qCard{background:#fff;border-radius:14px;padding:12px;margin:12px 0;border:1px solid #eee;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.badgeQ{display:inline-block;background:#0f5d2f;color:#fff;font-size:11px;font-weight:900;padding:3px 8px;border-radius:6px}
+.your{font-size:13px;color:#b91c1c;font-weight:700;margin-top:8px}.corr{font-size:13px;color:#0f6d3a;font-weight:700;margin-top:4px}
+.exp{background:#fef3c7;border-radius:12px;padding:10px;margin-top:8px;position:relative}.exp p{font-size:12px;margin-top:4px;line-height:1.4;color:#333}
+.pill{position:absolute;right:8px;bottom:8px;font-size:10px;font-weight:900;padding:5px 10px;border-radius:14px;color:#fff}.pill.ok{background:#16a34a}.pill.no{background:#dc2626}
+.resBtm{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;background:#fff;padding:10px;display:flex;gap:10px;border-top:1px solid #eee;z-index:6}
+.resBtm button{flex:1;padding:13px;border-radius:12px;font-weight:900;border:1.8px solid #0f5d2f}.resBtm button:first-child{background:#fff;color:#0f5d2f}.resBtm button:last-child{background:#0f5d2f;color:#fff}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- PAGE 1 -->
+<div id="page1">
+<div class="top"><span style="font-size:22px">←</span><b>START TEST</b></div>
+<div class="card"><h1>CHEMISTRY SET 1</h1><div class="bpsc">BPSC TRE 4 • Mock Test 1</div>
+<div class="boxes"><div class="bx">📄<span>50 Questions</span></div><div class="bx">🕒<span>30 Minutes</span></div><div class="bx">⚠️<span>1/3 Negative</span></div></div></div>
+<div class="instr"><h3>ⓘ निर्देश:</h3>
+<li>सभी प्रश्न अनिवार्य हैं। प्रत्येक प्रश्न के लिए एक ही विकल्प चुनें।</li>
+<li>प्रत्येक गलत उत्तर के लिए <b>1/3 अंक</b> की नकारात्मक अंकन होगा।</li>
+<li>परीक्षा के दौरान किसी अन्य ऐप या पेज पर स्विच न करें।</li>
+<li>समय समाप्त होने पर टेस्ट स्वतः जमा हो जाएगा।</li>
+</div>
+<button class="btnG" onclick="startTest()">START TEST</button>
+</div>
+
+<!-- PAGE 2 TEST -->
+<div id="page2" style="display:none">
+<div class="greenHead"><b>🎓 Gyankshetra | BPSC TRE 4</b><button class="menuBtn" onclick="openQ()">☰</button></div>
+<div class="testBar"><span>Mock Test 1 • BPSC TRE 4.0</span><span id="qCount">Q1 of 10</span></div>
+<div class="qArea"><div id="qNo" style="font-weight:900;color:#0f5d2f;font-size:13px">Q1 of 10</div><div class="qTxt" id="qTxt"></div><div id="opts"></div></div>
+<div class="btm"><button onclick="prev()">← Prev</button><button class="pr" id="nextBtn" onclick="nextQ()">Next →</button></div>
+</div>
+<div id="qPopup" onclick="closeQ()"><div class="popBox" onclick="event.stopPropagation()"><div style="display:flex;justify-content:space-between"><b>BPSC TRE 4 - Questions</b><b onclick="closeQ()" style="font-size:22px;cursor:pointer">×</b></div><div style="font-size:12px;font-weight:700;color:#0f5d2f;margin-top:4px"><span id="ansCount">0</span> / 10 Answered • 1/3 Negative</div><div class="grid" id="qGrid"></div><button class="subPop" onclick="showResult()">SUBMIT TEST</button></div></div>
+
+<!-- PAGE 3 RESULT -->
+<div id="page3" style="display:none">
+<div style="background:#fff;padding:12px 14px;display:flex;justify-content:space-between"><b>← Test Result • BPSC TRE 4</b><span>⎙</span></div>
+<div class="completed"><div><div style="display:flex;gap:8px;align-items:center"><span style="background:#fff;color:#0a4d1e;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center">✓</span><b style="font-size:19px">Completed!</b></div><div style="margin-top:6px;font-size:11px;background:rgba(255,255,255,.2);padding:4px 8px;border-radius:10px;display:inline-block">BPSC TRE 4 • SET 1 • 1/3 Negative</div></div><div class="circle"><b id="scoreB">0/10</b><span id="scoreT" style="font-size:11px">0% Score</span></div></div>
+<div class="perfBox"><h4>📊 Your Performance • BPSC TRE 4</h4><div class="perfGrid"><div class="pg"><b id="pCorrect">0</b><span>Correct</span></div><div class="pg"><b id="pWrong">0</b><span>Wrong ( -1/3 )</span></div><div class="pg"><b id="pSkip">0</b><span>Skipped</span></div></div><div class="bar"><div class="barFill" id="barFill" style="width:0%"></div></div><div style="display:flex;justify-content:space-between;margin-top:6px;font-size:12px;font-weight:700"><span>Accuracy</span><span id="pAcc">0%</span></div></div>
+<div class="analysisWrap"><b>Analysis • 10Q</b><div id="analysisList"></div></div>
+<div class="resBtm"><button onclick="reviewAgain()">REVIEW AGAIN</button><button onclick="continueNext()">CONTINUE →</button></div>
+</div>
+
+<!-- PAGE 4 THANK YOU -->
+<div id="page4" style="display:none;background:#fff;min-height:100vh;text-align:center;padding:30px 14px">
+<div style="font-size:60px">🎉</div><h1 style="color:#0f5d2f;margin-top:10px">Thank You! 🙏</h1><p style="color:#555;margin-top:6px">BPSC TRE 4 - You completed the session</p>
+<div class="perfBox" style="text-align:left;margin-top:20px"><h4>Your Final Performance • BPSC TRE 4</h4>
+<div style="margin-top:10px"><div style="display:flex;justify-content:space-between;margin-top:8px"><span>🏆 Score</span><b id="finalScore">0/10</b></div><div style="display:flex;justify-content:space-between;margin-top:8px"><span>🎯 Accuracy</span><b id="finalPer">0%</b></div><div style="display:flex;justify-content:space-between;margin-top:8px"><span>📝 Negative</span><b>1/3 per wrong</b></div></div><div class="bar"><div class="barFill" id="fBar" style="width:0%"></div></div></div>
+<div style="background:#fef9c3;border-radius:12px;padding:12px;margin-top:14px;font-size:12.5px;text-align:left">💡 <b>BPSC TRE 4 Tip:</b> Roz 1 Mock - Selection pakka! 🌱</div>
+<button onclick="location.reload()" style="margin-top:20px;width:100%;background:#16a34a;color:#fff;border:none;padding:16px;border-radius:14px;font-size:16px;font-weight:900">🏠 BACK TO HOME</button>
+<p style="margin-top:14px;font-size:11px;color:#888">Made with ❤️ by Gyankshetra Team • BPSC TRE 4</p>
+</div>
+
+</div>
+
+<script>
+const Qs=[
+{q:"The capital of Maharashtra is?",o:["Delhi","Mumbai","Pune","Nagpur"],a:1,e:"Mumbai is capital of Maharashtra."},
+{q:"Which is largest freshwater lake in India?",o:["Dal Lake","Chilika Lake","Wular Lake","Sambhar"],a:2,e:"Wular Lake is largest freshwater lake in India."},
+{q:"Father of Indian Constitution?",o:["Gandhi","B R Ambedkar","Nehru","Patel"],a:1,e:"Dr B R Ambedkar is father of Indian Constitution."},
+{q:"Water formula?",o:["CO2","H2O","O2","NaCl"],a:1,e:"H2O is water."},
+{q:"National Bird of India?",o:["Sparrow","Peacock","Parrot","Crow"],a:1,e:"Peacock is national bird."},
+{q:"2+2 =?",o:["3","4","5","6"],a:1,e:"2+2 = 4"},
+{q:"Capital of Bihar?",o:["Gaya","Patna","Muzaffarpur","Bhagalpur"],a:1,e:"Patna is capital of Bihar."},
+{q:"Largest planet?",o:["Earth","Mars","Jupiter","Venus"],a:2,e:"Jupiter is largest planet."},
+{q:"H2SO4 is?",o:["Acid","Base","Salt","Water"],a:0,e:"H2SO4 is strong acid."},
+{q:"BPSC stands for?",o:["Bihar Public Service Commission","Bihar Police Service","Bihar Private","None"],a:0,e:"BPSC = Bihar Public Service Commission."},
+];
+let cur=0, ans=Array(10).fill(null);
+function startTest(){page1.style.display='none';page2.style.display='block';render();}
+function render(){qNo.innerText=`Q${cur+1} of 10`;qCount.innerText=`Q${cur+1} of 10`;qTxt.innerText=`Q${cur+1}. ${Qs[cur].q}`;let h="";Qs[cur].o.forEach((t,j)=>{let sel=ans[cur]===j?' sel':'';h+=`<div class="opt${sel}" onclick="pick(${j})">${String.fromCharCode(65+j)}. ${t}</div>`;});opts.innerHTML=h;nextBtn.innerText=cur===9?"SUBMIT →":"Next →";ansCount.innerText=ans.filter(x=>x!==null).length;buildGrid();}
+function pick(j){ans[cur]=j;if(cur===9){setTimeout(showResult,300);}else{cur++;render();}}
+function nextQ(){if(cur<9){cur++;render();}else{showResult();}}
+function prev(){if(cur>0){cur--;render();}}
+function buildGrid(){let g="";Qs.forEach((_,i)=>{let c="qn";if(ans[i]!==null)c+=" done";if(i===cur)c+=" active";g+=`<div class="${c}" onclick="jump(${i})">${i+1}</div>`});qGrid.innerHTML=g;}
+function openQ(){buildGrid();qPopup.style.display='flex';}function closeQ(){qPopup.style.display='none';}
+function jump(i){cur=i;render();closeQ();}
+function showResult(){let c=0,w=0,s=0;ans.forEach((a,i)=>{if(a===null)s++;else if(a===Qs[i].a)c++;else w++;});let per=Math.round(c/10*100);page2.style.display='none';qPopup.style.display='none';page3.style.display='block';scoreB.innerText=`${c}/10`;scoreT.innerText=`${per}% Score`;pCorrect.innerText=c;pWrong.innerText=w;pSkip.innerText=s;pAcc.innerText=per+"%";barFill.style.width=per+"%";finalScore.innerText=`${c}/10`;finalPer.innerText=per+"%";fBar.style.width=per+"%";let html="";Qs.forEach((q,i)=>{let ok=ans[i]===q.a;let u=ans[i]!==null?q.o[ans[i]]:"Not Attempted";html+=`<div class="qCard"><span class="badgeQ">Q${i+1} • BPSC TRE 4</span><div style="font-weight:800;margin-top:5px;font-size:14.5px">${q.q}</div><div class="your">Your answer: ${u}</div><div class="corr">Correct: ✅ ${q.o[q.a]}</div><div class="exp"><b>💡 Explanation:</b><p>${q.e}</p><span class="pill ${ok?'ok':'no'}">${ok?'CORRECT':'WRONG -1/3'}</span></div></div>`;});analysisList.innerHTML=html;window.scrollTo(0,0);}
+function continueNext(){page3.style.display='none';page4.style.display='block';window.scrollTo(0,0);}
+function reviewAgain(){cur=0;page3.style.display='none';page2.style.display='block';render();}
+</script>
+</body>
+</html>
